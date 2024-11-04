@@ -33,7 +33,7 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/$DOCKER_IMAGE
 
       - name: Set Up Kind
-        uses: kubernetes-sigs/kind@v0.18.0  # Update to a newer version
+        uses: kubernetes-sigs/kind@v0.17.0
         with:
           version: v1.26.0
 
